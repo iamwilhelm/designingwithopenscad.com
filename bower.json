@@ -1,0 +1,32 @@
+{
+  "name": "designingwithopenscad.com",
+  "version": "0.0.0",
+  "homepage": "https://www.designingwithopenscad.com",
+  "authors": [
+    "Wil Chung <iamwil@gmail.com>"
+  ],
+  "description": "website for desigining with openscad",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "ebook",
+    "openscad",
+    "3d",
+    "printing"
+  ],
+  "license": "none",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": ">=3.3.3"
+  }
+}
