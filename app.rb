@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'sinatra/content_for'
 require 'haml'
 
 #set :public_folder, File.dirname(__FILE__) + '/static'

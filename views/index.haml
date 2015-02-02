@@ -1,12 +1,117 @@
+- content_for :head do
+  :css
+    .row {
+      margin-bottom: 4em;
+    }
 
-.jumbotron
-  %h1 Designing with OpenSCAD
-  %h2(style="margin-bottom: 2em") A young lady's first enchiridion
-  %p
-    %a.btn.btn-lg.btn-primary(href="https://leanpub.com/designing_with_openscad")
-      Buy now from $9.99
+    h2 {
+      font-family: Dosis;
+    }
+
+    h2 + p {
+      margin-top: 1em;
+    }
+
 
 .row
+  .col-md-12.text-center(style="padding: 4em")
+    %h1(style="font-weight: bold")
+      Want to make your imagined objects real?
+      %p
+        %small
+          Learn to design 3D printable models, programming, and the art of subversion.
+
+
+.jumbotron(style="height: 27em; padding-bottom: 4em; margin-bottom: 6em; background-image: url('http://lorempixel.com/1140/486/food/2')")
+  .row
+    .col-md-offset-6.col-md-6
+      %div(style="background-color: #eee; height: 18em; padding: 1em 2em; margin-top: 8em; margin-bottom: 0em")
+        %h2(style="margin-bottom: 2em")
+          Designing with OpenSCAD
+          %br
+          %small A young lady's first enchiridion
+
+        %p
+          %a.btn.btn-lg.btn-primary(href="https://leanpub.com/designing_with_openscad")
+            Buy now from $9.99
+
+
+.row(style="margin-bottom: 2em")
+  .col-md-offset-1.col-md-4.text-right
+    %h2
+      Learn to Combine 3D shapes.
+  .col-md-4
+    %pre
+      :preserve
+        difference() {
+          cube([10, 10, 10]);
+          cylinder(10, 5, 5);
+        }
+.row
+  .col-md-offset-1.col-md-4.text-right
+    %h2
+      To make 3D models.
+  .col-md-4
+    %img(src="http://lorempixel.com/360/200")
+
+
+.row
+  .col-md-12
+    %hr/
+  .col-md-4
+    %h2
+      Make your ideas real.
+    %p
+      Learn how to design 3D printable objects
+  .col-md-4
+    %h2(style="font-family: Dosis; margin-bottom: 1em")
+      Programming is literacy.
+    %p
+      Learn how to 3D print things
+  .col-md-4
+    %h2(style="font-family: Dosis; margin-bottom: 1em")
+      The art of subversion.
+    %p
+      Learn how to program objects
+  .col-md-12
+    %hr/
+
+
+.row(style="margin-bottom: 2em")
+  .col-md-offset-2.col-md-8
+    %h2.text-center
+      Make your ideas real.
+    %p.lead
+      Using a 3D printer, it's much easier than before to make your ideas real.
+      However, if mainstream CAD software seems hard to learn with its complicated
+      interface and not to mention expensive, then OpenSCAD--a simple scripting
+      language used to build 3D models--is for you.
+
+
+.row(style="margin-bottom: 2em")
+  .col-md-offset-2.col-md-8
+    %h2.text-center
+      Programming is literacy.
+    %p.lead
+      Software is eating the world. Every industry is changing as software changes the
+      way we live, work, and play.  OpenSCAD is an easy start for learning how to 
+      program, as a stepping stone to participating in the future. 
+
+
+.row(style="margin-bottom: 2em")
+  .col-md-offset-2.col-md-8
+    %h2.text-center
+      The art of subversion.
+    %p.lead
+      New technologies allow us to do things we weren't able to do before, easier,
+      cheaper, and faster. Inevitably, they allow us the possibility of changing
+      established social order and power. What are the things we can do with 3D
+      printing that people don't want us to do?
+
+
+.row
+  .col-md-12
+    %hr/
   .col-md-4
     %h3 Design Objects
     %p
@@ -19,4 +124,35 @@
     %h3 Learn Programming
     %p
       Learn how to program objects
+  .col-md-12
+    %hr/
 
+
+.row
+  .col-md-6
+    .media
+      .media-left
+        %img(src="http://lorempixel.com/50/50/people/6")
+      .media-body
+        %blockquote
+          %p
+            Nothing teaches OpenSCAD to beginners better
+          %footer
+            Markus Kintel
+            %cite(title="source title")
+              Creator of OpenSCAD
+
+  .col-md-6
+    .media
+      .media-left
+        %img(src="http://lorempixel.com/50/50/people/3")
+      .media-body
+        %blockquote
+          %p
+            There's no way you can learn OpenSCAD without it.
+          %footer
+            Noop
+            %cite(title="source title")
+              Creator of vertical 3D printer
+
+ 
