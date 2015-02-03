@@ -1,4 +1,4 @@
-- content_for :head do
+- content_for :foot do
   :css
     .row {
       margin-bottom: 4em;
@@ -12,9 +12,22 @@
       margin-top: 1em;
     }
 
+    .jumbotron {
+      height: 25em;
+      padding-bottom: 4em;
+      margin-bottom: 6em;
+      background-image: url('http://lorempixel.com/1140/486/food/2');
+    }
+
+    .book {
+      background-color: #eee;
+      height: 18em;
+      padding: 1em 2em;
+      margin-top: 6em;
+    }
 
 .row
-  .col-md-12.text-center(style="padding: 4em")
+  .col-md-12.text-center(style="margin-top: 2em")
     %h1(style="font-weight: bold")
       Want to make your imagined objects real?
       %p
@@ -22,11 +35,11 @@
           Learn to design 3D printable models, programming, and the art of subversion.
 
 
-.jumbotron(style="height: 27em; padding-bottom: 4em; margin-bottom: 6em; background-image: url('http://lorempixel.com/1140/486/food/2')")
+.jumbotron
   .row
     .col-md-offset-6.col-md-6
-      %div(style="background-color: #eee; height: 18em; padding: 1em 2em; margin-top: 8em; margin-bottom: 0em")
-        %h2(style="margin-bottom: 2em")
+      .book
+        %h2(style="font-family: Helvetica; margin-bottom: 2em")
           Designing with OpenSCAD
           %br
           %small A young lady's first enchiridion
@@ -108,24 +121,6 @@
       established social order and power. What are the things we can do with 3D
       printing that people don't want us to do?
 
-
-.row
-  .col-md-12
-    %hr/
-  .col-md-4
-    %h3 Design Objects
-    %p
-      Learn how to design 3D printable objects
-  .col-md-4
-    %h3 Learn 3D printing
-    %p
-      Learn how to 3D print things
-  .col-md-4
-    %h3 Learn Programming
-    %p
-      Learn how to program objects
-  .col-md-12
-    %hr/
 
 
 .row
