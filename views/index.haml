@@ -4,11 +4,20 @@
       margin-bottom: 4em;
     }
 
-    h2 {
-      font-family: Dosis;
+    h2 { font-family: Dosis; }
+    h3 { font-family: Dosis; }
+
+    .row h3 {
+      margin-bottom: 1em;
+    }
+    .row h3 {
+      margin-bottom: 1em;
     }
 
     h2 + p {
+      margin-top: 1em;
+    }
+    h3 + p {
       margin-top: 1em;
     }
 
@@ -26,10 +35,17 @@
       margin-top: 6em;
     }
 
+    .bar-section {
+      background-color: #292d2f;
+      color: #e1e1e1;
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
+
 .row
   .col-md-12.text-center(style="margin-top: 2em")
     %h1(style="font-weight: bold")
-      Want to make your imagined objects real?
+      Want to make your imagination real?
       %p
         %small
           Learn to design 3D printable models, programming, and the art of subversion.
@@ -46,82 +62,145 @@
 
         %p
           %a.btn.btn-lg.btn-primary(href="https://leanpub.com/designing_with_openscad")
-            Buy now from $9.99
+            Buy eBook from $9.99
 
 
-.row(style="margin-bottom: 2em")
-  .col-md-offset-1.col-md-4.text-right
+.row
+  .col-md-offset-2.col-md-8
     %h2
-      Learn to Combine 3D shapes.
-  .col-md-4
-    %pre
+      Make your ideas real.
+    %hr/
+    %p.lead
+      Nowadays, it's easier than ever to make your ideas real. All you need
+      is to design a 3D model to feed into a 3D printer. But if mainstream CAD 
+      software seems hard to learn and too expensive, then it's time to read
+      %i Designing with OpenSCAD.
+
+.row
+  .col-md-12
+    %hr/
+  .col-md-offset-2.col-md-8.text-center
+    %h2
+      What is OpenSCAD?
+    %p.lead
+      OpenSCAD is a free and simple programming language 
+      used to make parametric 3D models for 3D printing.
+  .col-md-offset-2.col-md-4
+    %h3.text-center
+      Combine 3D shapes.
+    %pre(style="height: 250px; margin-bottom: 2em")
       :preserve
         difference() {
           cube([10, 10, 10]);
           cylinder(10, 5, 5);
         }
-.row
-  .col-md-offset-1.col-md-4.text-right
-    %h2
+  .col-md-4
+    %h3.text-center
       To make 3D models.
-  .col-md-4
-    %img(src="http://lorempixel.com/360/200")
+    %img(src="http://lorempixel.com/360/250")
+  .col-md-12
+    %hr/
+
 
 
 .row
-  .col-md-12
-    %hr/
-  .col-md-4
+  .col-md-offset-2.col-md-8
     %h2
-      Make your ideas real.
-    %p
-      Learn how to design 3D printable objects
-  .col-md-4
-    %h2(style="font-family: Dosis; margin-bottom: 1em")
       Programming is literacy.
-    %p
-      Learn how to 3D print things
-  .col-md-4
-    %h2(style="font-family: Dosis; margin-bottom: 1em")
-      The art of subversion.
-    %p
-      Learn how to program objects
-  .col-md-12
     %hr/
-
-
-.row(style="margin-bottom: 2em")
-  .col-md-offset-2.col-md-8
-    %h2.text-center
-      Make your ideas real.
-    %p.lead
-      Using a 3D printer, it's much easier than before to make your ideas real.
-      However, if mainstream CAD software seems hard to learn with its complicated
-      interface and not to mention expensive, then OpenSCAD--a simple scripting
-      language used to build 3D models--is for you.
-
-
-.row(style="margin-bottom: 2em")
-  .col-md-offset-2.col-md-8
-    %h2.text-center
-      Programming is literacy.
     %p.lead
       Software is eating the world. Every industry is changing as software changes the
-      way we live, work, and play.  OpenSCAD is an easy start for learning how to 
+      way we live, work, and play.  OpenSCAD is a good start for learning how to 
       program, as a stepping stone to participating in the future. 
 
 
-.row(style="margin-bottom: 2em")
+.row.bar-section.text-center
+  .col-md-4
+    %h3
+      Best Practices
+    %p
+      Learn how to design 3D printable objects
+  .col-md-4
+    %h3
+      Much Pictures
+    %p
+      Learn how to 3D print things
+  .col-md-4
+    %h3
+      Naughtiness
+    %p
+      Learn how to program objects
+
+
+.row
   .col-md-offset-2.col-md-8
-    %h2.text-center
+    %h2
       The art of subversion.
+    %hr/
     %p.lead
       New technologies allow us to do things we weren't able to do before, easier,
       cheaper, and faster. Inevitably, they allow us the possibility of changing
-      established social order and power. What are the things we can do with 3D
+      established social order and power structure. What are the things we can do with 3D
       printing that people don't want us to do?
 
 
+.row.text-center
+  .col-md-12
+    %hr(style="margin-bottom: 4em")
+    %h2(style="margin-bottom: 1em")
+      Benefits
+  .col-md-4
+    %h3
+      Short Chapters
+    %p
+      Learn how to design 3D printable objects
+  .col-md-4
+    %h3
+      Much Pictures
+    %p
+      Learn how to 3D print things
+  .col-md-4
+    %h3
+      Naughtiness
+    %p
+      Learn how to program objects
+.row.text-center
+  .col-md-4
+    %h3
+      Short Chapters
+    %p
+      Learn how to design 3D printable objects
+  .col-md-4
+    %h3
+      Much Pictures
+    %p
+      Learn how to 3D print things
+  .col-md-4
+    %h3
+      Naughtiness
+    %p
+      Learn how to program objects
+  .col-md-12
+    %hr(style="margin-top: 4em")
+
+
+.row(style="margin-bottom: 2em")
+  .col-md-offset-2.col-md-8
+    %h2
+      What will I build?
+    %hr/
+    %p.lead
+      The book will start with building a model rocket      
+
+
+.row
+  .col-md-offset-2.col-md-8
+    %h2
+      Read Sample Chapters
+    %hr/
+    .well
+      %p.lead
+        Come and read some sample chapters
 
 .row
   .col-md-6
@@ -151,3 +230,17 @@
               Creator of vertical 3D printer
 
  
+.row
+  .col-md-4
+    %h2 Just the Ebook
+    %a.btn.btn-success(href="#")
+      from $9.99
+  .col-md-4
+    %h2 Ebook and Videos
+    %a.btn.btn-success(href="#")
+      Buy for $120
+  .col-md-4
+    %h2 Ebook and Stickers
+    %a.btn.btn-success(href="#")
+      Buy for $120
+
