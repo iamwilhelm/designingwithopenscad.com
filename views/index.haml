@@ -21,6 +21,13 @@
       margin-top: 1em;
     }
 
+    .lined-section {
+      border-top: 1px solid #aaa;
+      border-bottom: 1px solid #aaa;
+      padding-top: 4em;
+      padding-bottom: 4em;
+    }
+
     .jumbotron {
       height: 25em;
       padding-bottom: 4em;
@@ -38,8 +45,8 @@
     .bar-section {
       background-color: #292d2f;
       color: #e1e1e1;
-      padding-top: 2em;
-      padding-bottom: 2em;
+      padding-top: 4em;
+      padding-bottom: 4em;
     }
 
 .row
@@ -48,7 +55,7 @@
       Want to make your imagination real?
       %p
         %small
-          Learn to design 3D printable models, programming, and the art of subversion.
+          Learn to design 3D printable modeling, programming, and the art of subversion.
 
 
 .jumbotron
@@ -77,8 +84,6 @@
       %i Designing with OpenSCAD.
 
 .row
-  .col-md-12
-    %hr/
   .col-md-offset-2.col-md-8.text-center
     %h2
       What is OpenSCAD?
@@ -98,9 +103,6 @@
     %h3.text-center
       To make 3D models.
     %img(src="http://lorempixel.com/360/250")
-  .col-md-12
-    %hr/
-
 
 
 .row
@@ -113,25 +115,6 @@
       way we live, work, and play.  OpenSCAD is a good start for learning how to 
       program, as a stepping stone to participating in the future. 
 
-
-.row.bar-section.text-center
-  .col-md-4
-    %h3
-      Best Practices
-    %p
-      Learn how to design 3D printable objects
-  .col-md-4
-    %h3
-      Much Pictures
-    %p
-      Learn how to 3D print things
-  .col-md-4
-    %h3
-      Naughtiness
-    %p
-      Learn how to program objects
-
-
 .row
   .col-md-offset-2.col-md-8
     %h2
@@ -140,67 +123,81 @@
     %p.lead
       New technologies allow us to do things we weren't able to do before, easier,
       cheaper, and faster. Inevitably, they allow us the possibility of changing
-      established social order and power structure. What are the things we can do with 3D
-      printing that people don't want us to do?
+      established social order and power structure. What are the things we can do 
+      with 3D printing that people don't want us to do?
 
 
-.row.text-center
+.row.bar-section.text-center
   .col-md-12
-    %hr(style="margin-bottom: 4em")
     %h2(style="margin-bottom: 1em")
-      Benefits
+      Why code to make 3D models?
   .col-md-4
     %h3
-      Short Chapters
+      Easy to learn.
+    %div(style="font-size: 4em; margin: 0.25em 0em")
+      %i.fa.fa-thumbs-o-up
     %p
-      Learn how to design 3D printable objects
+      There's only 10 modules to learn in order to be dangerous in OpenSCAD. That makes
+      it easy to get started without learning a complicated interface.
   .col-md-4
     %h3
-      Much Pictures
+      Collaborate on designs.
+    %div(style="font-size: 4em; margin: 0.25em 0em")
+      %i.fa.fa-code-fork
     %p
-      Learn how to 3D print things
+      Unlike Mainstream CAD program files, OpenSCAD is code and can 
+      upon previous designs. OpenSCAD code can leverage git and other modern tools
+      to collaborate.
   .col-md-4
     %h3
-      Naughtiness
+      Parametric models.
+    %div(style="font-size: 4em; margin: 0.25em 0em")
+      %i.fa.fa-pencil
     %p
-      Learn how to program objects
+      You can build parametric models with OpenSCAD, so if a dimension changes, you
+      don't have to redesign the entire part. Just change a variable, and you're done.
+
+
 .row.text-center
+  .col-md-12
+    %h2(style="margin-bottom: 1em")
+      What will I build?
   .col-md-4
     %h3
-      Short Chapters
+      Model Rockets
     %p
-      Learn how to design 3D printable objects
+      Shoot model rockets
+      
   .col-md-4
     %h3
-      Much Pictures
+      Gimbal
     %p
       Learn how to 3D print things
   .col-md-4
     %h3
-      Naughtiness
+      3D printer
     %p
       Learn how to program objects
-  .col-md-12
-    %hr(style="margin-top: 4em")
-
-
-.row(style="margin-bottom: 2em")
-  .col-md-offset-2.col-md-8
-    %h2
-      What will I build?
-    %hr/
-    %p.lead
-      The book will start with building a model rocket      
 
 
 .row
   .col-md-offset-2.col-md-8
     %h2
-      Read Sample Chapters
-    %hr/
-    .well
-      %p.lead
-        Come and read some sample chapters
+      Get a free sample
+  .col-md-offset-2.col-md-5
+    %p
+      The sample chapters are from different parts of the book.
+    %img(src="http://lorempixel.com/400/200")
+  .col-md-3
+    %form
+      .form-group
+        %label(for="name") Name
+        %input.form-control(type="text" placeholder="Enter Name")
+      .form-group
+        %label(for="email") Email Address
+        %input.form-control(type="email" placeholder="Enter email")
+      %button.btn.btn-default.btn-lg(type="submit")
+        Get Sample Chapters
 
 .row
   .col-md-6
