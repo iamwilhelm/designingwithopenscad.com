@@ -2,7 +2,7 @@ require 'sinatra'
 require 'sinatra/content_for'
 require 'haml'
 
-#set :public_folder, File.dirname(__FILE__) + '/static'
+set :public_folder, File.dirname(__FILE__) + '/static'
 set :haml, :format => :html5, :layout_options => { :views => "views/layouts" }
 
 get "/" do
