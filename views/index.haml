@@ -12,40 +12,30 @@
     }
 
     .book {
-      margin-top: 6em;
       background-image: url('/images/canvas_bg.jpg');
       background-color: #eee;
-      height: 18em;
-      padding: 4em 2em;
+      height: 34em;
+      padding: 2em 2em;
     }
 
 
-.row
-  .col-md-12.text-center(style="margin-top: 2em")
-    %h1(style="font-weight: bold")
+.jumbotron
+  .col-md-6.text-center(style="margin-top: 2em")
+    %h2(style="color: #444; font-size: 3em")
       Make your ideas real. Even the unthinkable ones.
       %p
-        %small
+        %small(style="font-size: 0.9em")
           Learn to design 3D printable modeling through programming
 
-
-.jumbotron
-  .row
-    .col-md-6
-      .book
-        %h2(style="font-family: Helvetica; margin-bottom: 2em")
-          Designing with OpenSCAD
-          %br
-          %small A young lady's first enchiridion
-
-    .col-md-6.text-center
-      %p(style="margin-top: 9em;")
-        %a.btn.btn-lg.btn-success(href="https://leanpub.com/designing_with_openscad/packages/book/purchases/new")
-          Buy eBook from $9.99
-
-
 .row
-  .col-md-offset-2.col-md-8
+  .col-md-offset-1.col-md-4
+    .book
+      %h2(style="font-size: 1.8em; font-family: Helvetica; margin-bottom: 2em")
+        Designing with OpenSCAD
+        %br
+        %small A young lady's first enchiridion
+
+  .col-md-offset-1.col-md-6
     %h2
       Make your ideas real.
     %hr/
@@ -55,10 +45,6 @@
         is to design a 3D model to feed into a 3D printer. But if mainstream CAD 
         software seems hard to learn and too expensive, then it's time to learn from 
         _Designing with OpenSCAD_.
-
-
-.row
-  .col-md-offset-2.col-md-8
     %h2
       Even the unthinkable ones.
     %hr/
@@ -69,12 +55,13 @@
         established social order and power structure. What are the things we can do 
         with 3D printing that people don't want us to do?
 
+
 .row.bar-section
   .col-md-12.text-center
     %h2
       Convinced already? 
       &nbsp;
-      %a.btn.btn-primary(href="https://leanpub.com/designing_with_openscad/packages/book/purchases/new")
+      %a.btn.btn-success(href="https://leanpub.com/designing_with_openscad/packages/book/purchases/new")
         Buy eBook from $9.99
 
 .row
