@@ -1,5 +1,8 @@
 - content_for :head do
   :css
+    h2 { font-family: Dosis; }
+    h3 { font-family: Dosis; }
+
     .row {
       margin-bottom: 4em;
     }
@@ -44,18 +47,22 @@
     .lead
       :markdown
         New technologies allow us to do things we weren't able to do before, easier,
-        cheaper, and faster. Inevitably, they allow us the possibility of changing
-        established social order and power structure. What are the things we can do 
+        cheaper, and faster. Inevitably, they allow us to bend the world to our
+        voice, our vision, and our will. What are the things we can do 
         with 3D printing that people don't want us to do?
 
 
 .row.bar-section
-  .col-md-12.text-center
+  .col-md-3.col-md-offset-3(style="text-align: right")
     %h2
       Convinced already? 
-      &nbsp;
+  .col-md-6(style="text-align: left")
+    %p
       %a.btn.btn-success(href="https://leanpub.com/designing_with_openscad/packages/book/purchases/new")
-        Buy eBook from $9.99
+        Buy eBook from $0.99 on up
+    %p
+      You're paying for a book as it's being written. In return, you'll
+      set your price, and the eBook will be updated as the book is written.
 
 .row
   .col-md-offset-2.col-md-8.text-center
@@ -63,7 +70,6 @@
       What is OpenSCAD?
     %p.lead
       OpenSCAD is a free and simple programming language
-      %br/
       used to make 3D models for 3D printing.
   .col-md-4
     %h3.text-center
@@ -95,17 +101,6 @@
       %i.fa.fa-apple
       %i.fa.fa-linux
 
-
-.row
-  .col-md-offset-2.col-md-8
-    %h2
-      Programming is literacy.
-    %hr/
-    .lead
-      :markdown
-        Software is eating the world. Every industry is changing as software changes the
-        way we live, work, and play.  OpenSCAD is a good start for learning how to 
-        program, as a stepping stone to participating in the future. 
 
 
 .row.bar-section.text-center
@@ -140,25 +135,119 @@
 
 
 .row.text-center
-  .col-md-12
+  .col-md-8.col-md-offset-2
     %h2(style="margin-bottom: 1em")
       What will I build?
     %p.lead
-      A model rocket
-  .col-md-3
+      To start, a model rocket missile pack. What sort of rocket would 
+      we be able to build if we weren't limited by traditional manufacturing
+      constraints? In the future, as the book is written, we'll explore other 
+      unthinkable ideas to build and use.
+  .col-md-4
     %img(src="/images/cone.png")
-  .col-md-3
+  .col-md-4
     %img(src="/images/tail.png")
-  .col-md-3
+  .col-md-4
     %img(src="/images/assembly.png")
-  .col-md-3
-    %img(src="http://lorempixel.com/250/250")
 
 .row.text-center
-  .col-md-12
-    %a.btn.btn-lg.btn-primary(href="https://leanpub.com/designing_with_openscad/packages/book/purchases/new")
-      %h2(style="margin: 0.5em;")
-        Buy from $9.99
+  .col-md-3.col-md-offset-2(style="text-align: right")
+    %h2
+      Buy. Print.
+  .col-md-6(style="text-align: left")
+    %p
+      %a.btn.btn-lg.btn-success(href="https://leanpub.com/designing_with_openscad/packages/book/purchases/new")
+        Buy from $0.99 on up
+    %p
+      You're paying for a book as it's being written. In return, you'll
+      set your price, and the eBook will be updated as the book is written.
+
+
+.row
+  .col-md-offset-2.col-md-8
+    %h2
+      Programming is literacy.
+    %hr/
+    .lead
+      :markdown
+        Software is eating the world. Every industry is changing as software changes the
+        way we live, work, and play.  OpenSCAD is a good start for learning how to 
+        program, as a stepping stone to participating in the future. 
+
+.row
+  .col-md-offset-2.col-md-8
+    %h2
+      Subversion as critical thinking.
+    %hr/
+    .lead
+      :markdown
+        The things you see around you in your daily life, was thought
+        of by other people no smarter and harder working than you. Their only
+        advantage was that they were born before you were.
+
+        Once you realize that, it's a short leap to think of way to change the
+        things in your immediate surroundings.
+
+.row
+  .col-md-12.text-center
+    %h2(style="margin-bottom: 1em")
+      What will I learn?
+    %p
+  .col-md-3.col-md-offset-3
+    %h3
+      Programming
+    %ul
+      %li
+        Separation of concerns
+      %li
+        Refactoring
+      %li
+        Debugging
+
+    %h3 
+      Spatial Acuity
+    %ul
+      %li
+        Basic shapes
+      %li 
+        Transformations
+      %li
+        Setting frames of reference
+
+
+  .col-md-3
+    %h3
+      Critical thinking
+    %ul
+      %li
+        Identify the audience and purpose
+      %li
+        Sub-dividing problems
+      %li
+        Identifying self-biases
+      %li
+        Making a decision with incomplete information
+
+    %h3
+      Perspective
+    %ul
+      %li
+        Taking stock of other points of view
+      %li
+        How to gain experience
+
+
+.row.text-center
+  .col-md-3.col-md-offset-2(style="text-align: right")
+    %h2
+      Buy. Learn.
+  .col-md-6(style="text-align: left")
+    %p
+      %a.btn.btn-lg.btn-success(href="https://leanpub.com/designing_with_openscad/packages/book/purchases/new")
+        Buy from $0.99 on up
+    %p
+      You're paying for a book as it's being written. In return, you'll
+      set your price, and the eBook will be updated as the book is written.
 
 
 -#  .col-md-4
@@ -260,9 +349,6 @@
 
 - content_for :foot do
   :css
-    h2 { font-family: Dosis; }
-    h3 { font-family: Dosis; }
-
     .row h3 {
       margin-bottom: 1em;
     }
