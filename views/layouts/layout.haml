@@ -1,6 +1,9 @@
 !!! 5
 %html(lang="en")
   %head
+    - if ENV['RACK_ENV'] == "production"
+      = haml :"shared/_optimizely", layout: false
+
     %meta(charset="utf-8")
     %meta(name="viewport" content="width=device-width, initial-scale=1")
 
