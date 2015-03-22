@@ -9,31 +9,23 @@
       padding-bottom: 4em;
       margin-bottom: 6em;
       background-image: url('/images/hero.jpg');
+      background-position: -50px center;
+      background-repeat: no-repeat;
+      background-size: auto 150%;
     }
 
-    .book {
-      background-image: url('/images/canvas_bg.jpg');
-      background-color: #eee;
-      height: 34em;
-      padding: 2em 2em;
-    }
-
-
-.jumbotron
-  .col-md-6.text-center(style="margin-top: 2em")
-    %h2(style="color: #444; font-size: 3em")
-      Make your ideas real. Even the unthinkable ones.
-      %p
-        %small(style="font-size: 0.9em")
-          Learn to design 3D printable modeling through programming
+- content_for :hero do
+  .jumbotron(style="border-radius: 0px")
+    .col-md-6.text-center(style="margin-top: 2em")
+      %h2(style="color: #555; font-size: 3em")
+        Make your ideas real. Even the unthinkable ones.
+        %p
+          %small(style="font-size: 0.9em")
+            Learn to design 3D printable modeling through programming
 
 .row
   .col-md-offset-1.col-md-4
-    .book
-      %h2(style="font-size: 1.8em; font-family: Helvetica; margin-bottom: 2em")
-        Designing with OpenSCAD
-        %br
-        %small A young lady's first enchiridion
+    %img(src="/images/title_cover.png")
 
   .col-md-offset-1.col-md-5
     %h2
@@ -197,6 +189,19 @@
 //      3D printer.
 //    %p
 //      What happens when you can make whatever you want?
+//
+//  .col-md-4
+//    %h3
+//      House keys.
+//    %p
+//      What is security when you can print anything?
+//
+//  .col-md-4
+//    %h3
+//      Statue of Mohammad
+//    %p
+//      What is the line that makes people angry?
+
 
 
 .row
